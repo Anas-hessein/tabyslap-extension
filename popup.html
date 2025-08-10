@@ -9,13 +9,26 @@
     <body>
     <div class="container">
         <h1>🐸 TabySlap</h1>
-        <p class="subtitle">Stay under your tab limit, or get roasted.</p>
-        <label for="limit">🎯 Max Tabs:</label>
-        <input type="number" id="limit" min="1"/>
-        <button id="save">💾 Save Limit</button>
-        <p id="status"></p>
-    </div>
+        <p class="subtitle"id="tab-info">Loading...</p>
+        
+        <label>🎯 Global Max Tabs:</label>
+        <input type="number" id="global-limit" min="1"/>
+        
+        <label>💬 Roast Style:</label>
+        <select id="roast-style">
+        <option value="funny">Funny</option>
+        <option value="sarcastic">Sarcastic</option>
+        <option value="motivational">Motivational</option>
+    </select>
+
+    <label><input type="checkbox" id="hard-limit"> Hard Limit Mode (close tabs over limit)</label>
+
+    <button id="save">💾 Save Settings</button>
+    <button id="close-extra">🗑 Close Tabs Over Limit</button>
+
+    <p id="status"></p>
+</div>
       
     <script src="popup.js"></script>
-    </body>
+</body>
 </html>
